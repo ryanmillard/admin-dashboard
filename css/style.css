@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 225px 1fr;
+  grid-template-rows: 100vh;
+}
+
+#sidebar {
+  background-color: #0891B2;
+}
+
+/*# sourceMappingURL=style.css.map */
