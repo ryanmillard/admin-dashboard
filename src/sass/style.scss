@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 // sass --watch src/sass/style.scss:src/css/style.css
 
 $black: #242424;
@@ -21,10 +23,67 @@ $cyan-50: #ECFEFF;
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 225px 1fr;
+  grid-template-columns: 235px 1fr;
   grid-template-rows: 100vh;
+  font-family: 'Roboto', monospace;
 }
 
 #sidebar {
   background-color: $cyan-600;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+.header-icon {
+  height: 50px;
+  width: 235px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  span {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', monospace;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 80%;
+  gap: 5px;
+
+  a {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    
+    &:visited, &:link {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  display: inline;
+  margin-right: 5px;
+} 
