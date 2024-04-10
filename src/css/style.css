@@ -23,6 +23,7 @@ body {
   align-items: center;
   flex-direction: row;
   padding: 5px;
+  margin: 10px 0px;
 }
 .header-icon img {
   width: 40px;
@@ -41,7 +42,7 @@ nav {
   align-items: center;
   flex-direction: column;
   width: 80%;
-  gap: 5px;
+  gap: 14px;
 }
 nav a {
   width: 100%;
@@ -49,6 +50,8 @@ nav a {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
 }
 nav a:visited, nav a:link {
   color: white;
@@ -57,9 +60,12 @@ nav a:visited, nav a:link {
 
 .nav-icon {
   width: 30px;
-  height: 30px;
   display: inline;
-  margin-right: 5px;
+  margin-right: 7px;
+}
+
+nav a:nth-child(6) {
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
