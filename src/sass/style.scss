@@ -1,24 +1,10 @@
+// Load other scss 
+@import './_project';
+@import './_variables';
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // sass --watch src/sass/style.scss:src/css/style.css
-
-$black: #242424;
-$blue: #117E89;
-$red: #DB3A34;
-$green: #A5C882;
-$yellow: #F7DD72;
-
-$cyan-950: #042F2E;
-$cyan-900: #164E63;
-$cyan-800: #155E75;
-$cyan-700: #0E7490;
-$cyan-600: #0891B2;
-$cyan-500: #06B6D4;
-$cyan-400: #22D3EE;
-$cyan-300: #67E8F9;
-$cyan-200: #A5F3FC;
-$cyan-100: #CFFAFE;
-$cyan-50: #ECFEFF;
 
 body {
   margin: 0;
@@ -104,7 +90,7 @@ header {
 
 main {
   background-color: #eee;
-  // overflow: hidden;
+  overflow: scroll;
 }
 
 .topbar {
@@ -170,71 +156,4 @@ main {
   height: 40px;
   border-radius: 50%;
   margin-left: 20px;
-}
-
-#projects-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  padding: 30px;
-  overflow: hidden;
-  overflow-y: scroll;
-  height: 100%;
-}
-
-.project {
-  background-color: white;
-  width: 295px;
-  height: 200px;
-  max-height: 200px;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 5px 5px 5px lightgrey;
-  border-left: solid 10px $cyan-500;
-
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.project-title {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.project-description {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  height: 65%;
-}
-
-.project-icons {
-  height: 30px;
-  margin: 10px;
-  margin-right: -5px;
-  position:absolute;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-end;
-  gap: 10px;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 850px) {
-  .project {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 851px) and (max-width: 1000px) {
-  .project {
-    width: calc(50% - 60px);
-  }
 }
