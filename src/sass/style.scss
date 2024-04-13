@@ -157,3 +157,30 @@ main {
   border-radius: 50%;
   margin-left: 20px;
 }
+
+.topbar-buttons {
+  height: 50%;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    height: 100%;
+    width: 30%;
+    background-color: $cyan-600;
+    color: white;
+  }
+}
+
+// Hide topbar buttons when window is too small
+@media screen and (max-width: 900px) {
+  .topbar-buttons {
+    display: none;
+  }
+}
